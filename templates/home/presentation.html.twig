@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Présentation - S.H.I.E.L.D{% endblock %}
+
+{% block body %}
+
+    <div id="containerPartner">
+        {{ include('header.html.twig') }}
+        <section class="section flex h-100" id="section1">
+            <article>
+                <h1>Le <span style="color: #FDD762;">S.H.I.E.L.D</span> c'est quoi ? Quelles sont nos valeurs ?</h1>
+            </article>
+            <img src="{{ asset('assets/designPresentation.svg') }}" alt="Design 3D Contact">
+        </section>
+        <h2 class="title" id="accrochePresentation"></h2>
+        <div class="barHorizontal"></div>
+
+        <section class="section flex h-100" id="sectionForm">
+            <div id="cordonnees">
+                <h2>Qui sommes-nous ?</h2>
+                <p class="text justify">
+                    Depuis 2012, année de sa création, <span style="color: #FDD762; font-weight: bold">S.H.I.E.L.D</span>, réseau de distribution commercial, est partenaire de Stark Industries. Au travers de ces années d'expérience, une seule volonté : celle de permettre aux consommateurs d'avoir accès à une énergie de qualité à un tarif abordable. <span style="color: #FDD762; font-weight: bold">S.H.I.E.L.D</span> est également présent sur des marchés porteurs tels que l'assurance et la presse. Notre société représente ainsi un apport de plus de 12 000 nouveaux clients pour nos partenaires.                </p>
+                <br><br>
+                <nav id="navAtout">
+                    <a href=""><i class="fas fa-check"></i>Défendre les consommateurs</a>
+                    <a href=""><i class="fas fa-check"></i>Offrir un service de qualité</a>
+                    <a href=""><i class="fas fa-check"></i>Voir au-delà de votre CV</a>
+                </nav>
+            </div>
+            <div id="form2">
+                <p>
+                    <i style="margin-right: 5px; color: #FDD762" class="fas fa-check"></i><b>Le service administratif</b><br>
+                    - Joue le rôle d'interface entre nos forces de ventes et nos partenaires<br>
+                    - Réceptionne les dossiers clients<br>
+                    - Gère toute la partie logistique<br><br>
+
+                    <i style="margin-right: 5px; color: #FDD762" class="fas fa-check"></i><b>Le service ressources humaines</b><br>
+                    - Assure un suivi des forces de ventes<br>
+                    - Gère le recrutement de nos futurs collaborateurs<br>
+                    - Propose un plan de carrière et des formations en interne<br><br>
+
+                    <i style="margin-right: 5px; color: #FDD762" class="fas fa-check"></i><b>Le service qualité</b><br>
+                    - Contrôle les dossiers clients<br>
+                    - Confirme ou annule les offres proposées en contactant les clients<br>
+                    - Contrôle le déroulement des entretiens entre conseillers et clients<br><br>
+
+                    <i style="margin-right: 5px; color: #FDD762" class="fas fa-check"></i><b>Le service communication</b><br>
+                    - Conçoit et réalise différents supports de communication, web ou print, à destination de nos forces de vente, mais aussi du grand public<br>
+                    - Gère l'image de la société     <br>
+                </p>
+            </div>
+        </section>
+        <div class="barHorizontal"></div>
+
+        <section class="section flex" id="section2">
+            <div class="card">
+                <i class="fas fa-user"></i>
+                <h4>Les particuliers</h4>
+            </div>
+            <div class="cardBar"></div>
+            <div class="card">
+                <i class="fas fa-user-tie"></i>
+                <h4>Les professionnels</h4>
+            </div>
+            <div class="cardBar"></div>
+            <div class="card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Partout en France</h4>
+            </div>
+
+        </section>
+        {{ include('footer.html.twig') }}
+    </div>
+    <script>
+        setTimeout(function() {
+            new TypeIt("#accrochePresentation", {
+                strings: "Réseau de distribution commercial. ",
+                speed: 50,
+                waitUntilVisible: true
+            }).go();
+        }, 1000)
+    </script>
+
+
+{% endblock %}

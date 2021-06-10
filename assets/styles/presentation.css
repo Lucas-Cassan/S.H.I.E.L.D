@@ -1,0 +1,13 @@
+#form2{
+    border-radius: 20px;
+    height: 90%;
+    background-color: white;
+    width: 40%;
+    padding: 5%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}

@@ -1,0 +1,163 @@
+#containerContact{
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    background-color: white;
+    top: -1000%;
+}
+
+#sectionForm{
+    height: 80vh;
+    padding: 10vh 5% 10vh 10%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sectionForm form{
+    border-radius: 20px;
+    height: 100%;
+    background-color: white;
+    width: 45%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}
+#sectionForm form .label{
+    display: flex;
+    width: 80%;
+    margin: 4% 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    padding: 3px;
+    border-radius: 10px;
+    border: solid 2px #E0E0E7;
+}
+#sectionForm form .label.big{
+    background-color: #F9F9FB;
+    border: 0;
+    height: 250px;
+    overflow-y: hidden;
+}
+#sectionForm form .label label{
+    position: absolute;
+    left: 10px;
+    top: -30px;
+}
+#sectionForm form .label i{
+    color: #E0E0E7;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sectionForm form .label .bar{
+    color: #E0E0E7;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sectionForm form .label input{
+    border: 0;
+    outline: none;
+    width: 85%;
+    height: 100%;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+#sectionForm form .label.big textarea {
+    border: 0;
+    outline: none;
+    width: 90%;
+    padding: 5% 5%;
+    height: 90%;
+    background-color: transparent;
+    resize: none;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#sectionForm #cordonnees{
+    height: 100%;
+    width: 40%;
+    margin-right: 10%;
+}
+#sectionForm #cordonnees h2{
+    margin: 0;
+    height: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+#sectionForm #cordonnees p{
+    margin: 0;
+    height: 15%;
+}
+
+#navContact{
+    padding: 0 5%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#navContact a{
+    margin: 10px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #1E1E20;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border: solid 2px transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+#navContact a i{
+    margin-right: 20px;
+    color: #FDD762;
+}
+
+#navContact a:hover {
+    background-color: rgba(253, 215, 98, .5);
+    border: solid 2px #FDD762;
+}
+
+#socialContact{
+    padding: 0 5%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#socialContact a{
+    display: flex;
+    margin: 10px;
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: transparent;
+    color: #FDD762;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border: solid 2px transparent;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+#socialContact a:hover {
+    background-color: rgba(253, 215, 98, .3);
+    border: solid 2px #FDD762;
+}
+

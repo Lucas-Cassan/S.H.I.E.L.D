@@ -1,0 +1,42 @@
+header {
+    z-index: 999;
+    width: 98vw;
+    height: 5vh;
+    padding: 1vw;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav{
+    padding: 0 10%;
+    border-radius: 9999px;
+    /*background: rgba(0,0,0,0.8);*/
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+}
+header nav ul li{
+    padding: 0 20px;
+}
+header nav a{
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    color: #1E1E20;
+    text-decoration: none;
+    cursor: pointer;
+}
+header nav a:hover{
+    color: #FDD762;
+}

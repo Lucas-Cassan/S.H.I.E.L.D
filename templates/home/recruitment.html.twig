@@ -1,0 +1,170 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Recrutement - S.H.I.E.L.D{% endblock %}
+
+{% block body %}
+
+    <div id="containerPartner">
+        {{ include('header.html.twig') }}
+        <section class="section flex h-100" id="section1">
+            <article>
+                <h1>Vous êtes un super héros de la vente ? Rejoignez le <span style="color: #FDD762;">S.H.I.E.L.D</span></h1>
+            </article>
+            <img src="{{ asset('assets/designRecruitment.svg') }}" alt="Design 3D Contact">
+        </section>
+        <h2 class="title" id="accrocheRecruitment"></h2>
+        <div class="barHorizontal"></div>
+
+        <section class="section flex h-100" id="sectionForm">
+            <div id="cordonnees">
+                <h2>Nous recrutons</h2>
+                <p class="text justify">
+                    <span style="color: #FDD762; font-weight: bold">S.H.I.E.L.D</span> recrute à travers toute la France pour mener à bien ses objectifs. Conseillers Commerciaux, Managers Commerciaux ou encore Directeurs d'agences, nous recherchons nos futurs collaborateurs. Vous pensez avoir l'âme d'un super-héros de la vente ? Lancez-vous et rejoignez notre société.
+                </p>
+                <br><br>
+                <nav id="navAtout">
+                    <a href=""><i class="fas fa-check"></i>Relever des défis</a>
+                    <a href=""><i class="fas fa-check"></i>Aucun niveau requis</a>
+                    <a href=""><i class="fas fa-check"></i>Permis B requis</a>
+                    <a href=""><i class="fas fa-check"></i>Status CDI</a>
+                    <a href=""><i class="fas fa-check"></i>Et bien sûr des primes !</a>
+                </nav>
+            </div>
+            <div id="form">
+                <p>
+                    Chez <span style="color: #FDD762; font-weight: bold;">S.H.I.E.L.D</span>, nous préférons à un grand CV, la persévérance, l'ambition, le courage et le goût du challenge. C'est pourquoi nous ne recrutons pas uniquement des collaborateurs expérimentés. Toute personne motivée avec peu d'expérience peut ainsi prétendre à rejoindre notre société et nos équipes.
+                    <br><br>
+                    Votre réussite est notre objectif, c'est pourquoi vous aurez la possibilité d'évoluer au sein de notre société grâce à des formations en interne. Nous vous proposons en effet une évolution rapide du poste de Conseiller Commercial vers celui de Manager Commercial puis de Directeur d'agences.
+                </p>
+                <br>
+                <br>
+                   <a class="btn" href="{{ path('contact') }}">Contactez nous</a>
+
+            </div>
+        </section>
+        <div class="barHorizontal"></div>
+
+        <section class="section flex" id="section2">
+            <h2 class="title">Tout commence ici !</h2>
+            <div class="card">
+                <i class="fas fa-euro-sign"></i>
+                <h4>Salaire attractif</h4>
+                <p>Aucune limite</p>
+            </div>
+            <div class="cardBar"></div>
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h4>Plan de carrière</h4>
+                <p>Visez plus haut</p>
+            </div>
+            <div class="cardBar"></div>
+            <div class="card">
+                <i class="fas fa-trophy"></i>
+                <h4>Challenges</h4>
+                <p>Soyez le meilleur</p>
+            </div>
+            <div class="cardBar"></div>
+            <div class="card">
+                <i class="fas fa-award"></i>
+                <h4>Avantages</h4>
+                <p>Que des bonus</p>
+            </div>
+            <div class="cardBar"></div>
+            <div class="card">
+                <i class="fas fa-wifi"></i>
+                <h4>Digital</h4>
+                <p>Restez connecté</p>
+            </div>
+        </section>
+        <div class="barHorizontal"></div>
+        <section class="section flex formation">
+            <h2 class="title">Réseau Commercial</h2>
+            <p class="smallText">
+                Nos commerciaux constituent le cœur de <span style="color: #FDD762; font-weight: bold;">S.H.I.E.L.D</span>. Du conseiller commercial au directeur régional, chacun d’entre eux contribue à la bonne réussite de nos objectifs. Véritables garants des ventes, ils sont capables de convaincre n’importe quel client de souscrire à son contrat. Nous proposons à nos collaborateurs terrain des formations internes et continues ainsi qu’un suivi personnalisé pour se perfectionner.            </p>
+            <div id="formation1">
+                <div class="cardFormation">
+                    <h3>Conseiller commercial</h3>
+                    <p>
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Démarcher les particuliers.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Démarcher les professionnels.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Respectez vos objectifs.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Représentez les valeurs.
+                    </p>
+                </div>
+                <div class="cardFormation">
+                    <h3>Manager commercial</h3>
+                    <p>
+                          <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Assurez le résultat de l'équipe
+                          <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Vous formez les commerciaux.
+                          <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Vous animez votre équipe
+                          <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Vous gérez votre secteur
+                          <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Contrôlez les contrats.
+                          <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Collaborez avec votre Directeur.
+                    </p>
+                </div>
+                <div class="cardFormation">
+                    <h3>Directeur d’agence</h3>
+                    <p>
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Démarcher les particuliers.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Démarcher les professionnels.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Respectez vos objectifs.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Représentez les valeurs.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <div class="barHorizontal"></div>
+
+        <section class="section flex formation">
+            <h2 class="title">Back-Office</h2>
+            <p class="smallText">
+                La satisfaction client est un enjeu majeur pour <span style="color: #FDD762; font-weight: bold;">S.H.I.E.L.D</span> ! Pour cela, nous avons mis en place un service back-office moderne et performant, veillant à la qualité administrative de chaque nouveau contrat rapporté par nos collaborateurs. Nous disposons d’un centre d’appel qui ré-appelle systématiquement tous les nouveaux clients réalisés au jour le jour pour s’assurer de la qualité de vente de nos collaborateurs terrain.
+            </p>
+            <div id="formation1">
+                <div class="cardFormation">
+                    <h3>Assistant admninistratif</h3>
+                    <p>
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Démarcher les particuliers.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Démarcher les professionnels.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Respectez vos objectifs.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Représentez les valeurs.
+                    </p>
+                </div>
+                <div class="cardFormation">
+                    <h3>Responsable ADV</h3>
+                    <p>
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Assurez le résultat de l'équipe
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Vous formez les commerciaux.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Vous animez votre équipe
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Vous gérez votre secteur
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Contrôlez les contrats.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Collaborez avec votre Directeur.
+                    </p>
+                </div>
+                <div class="cardFormation">
+                    <h3>Responsable RH</h3>
+                    <p>
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Démarcher les particuliers.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Démarcher les professionnels.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Respectez vos objectifs.
+                        <br><i class="fas fa-plus" style="color: #FDD762; margin-right: 10px"></i>Représentez les valeurs.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        {{ include('footer.html.twig') }}
+    </div>
+    <script>
+        setTimeout(function() {
+            new TypeIt("#accrocheRecruitment", {
+                strings: "Nous recrutons toutes personnes motivées, on se fit pas au diplôme. ",
+                speed: 50,
+                waitUntilVisible: true
+            }).go();
+        }, 1000)
+    </script>
+
+
+{% endblock %}

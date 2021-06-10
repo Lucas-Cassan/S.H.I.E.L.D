@@ -1,3 +1,226 @@
-body {
-    background-color: lightgray;
+html, body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
+body{
+    overflow-x: hidden;
+}
+#main{
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+}
+#container{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    background-color: white;
+    top: -1000%;
+}
+.textWhite{
+    font-size: 1em;
+    color: white;
+}
+.text{
+    font-size: 1em;
+    color: #1E1E20;
+}
+h1, h2, h3{
+    margin: 10px 0;
+    color: #1E1E20;
+}
+h1{
+    font-size: 3em;
+}
+.section{
+    width: 80%;
+    padding: 5% 10%;
+    position: relative;
+}
+.section.h-100{
+    height: 90vh;
+    padding: 5vh 10%;
+}
+.section.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#home{
+    background-color: #161617;
+    overflow: hidden;
+}
+.section #logoHome{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.svgColor{
+    fill:#161617;
+}
+#slide{
+    transition: 1s all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(100%);
+}
+#slideBG{
+    background-color: white;
+    height: 150vh;
+    width: 100vw;
+    position: absolute;
+    top: 35vh;
+    left: 0;
+}
+.slideColor{
+    fill: white;
+}
+.wave-top {
+    height: 40vh;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#arrowStart{
+    fill: #FDD762;
+    transition: all .3s ease-in-out;
+    width: 60px;
+    position: absolute;
+    bottom: 4rem;
+    cursor: pointer;
+    transform: translateY(500%) rotate(90deg);
+}
+.logoItem{
+    transform: translateY(-20%);
+    transition: all .3s cubic-bezier(0.32, -0.31, 0.79, 1.4);
+}
+#logoShield{
+    transition: all .5s ease-out;
+    animation: wobble 2s ease 1s 1 normal forwards;
+
+}
+#slogan{
+    width: 100%;
+    text-align: center;
+}
+.btn{
+    padding: 10px 15px;
+    background-color: #FDD762;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border: 2px transparent solid;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.btn:hover{
+    letter-spacing: .1em;
+}
+.btnBorder{
+    padding: 10px 15px;
+    background-color: white;
+    color: #FDD762;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    border: solid 2px #FDD762;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+}
+.btnBorder:hover{
+    letter-spacing: .1em;
+}
+svg{
+    overflow: visible!important;
+}
+#section1{
+    height: 85vh;
+}
+#section1 article{
+    width: 45%;
+}
+#section1 img{
+    width: 45%;
+}
+#section2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#section3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 15vw;
+    height: 15vw;
+    background-color: transparent;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1E1F21;
+    transition: all .3s ease-in-out;
+}
+.card i{
+    font-size: 3em;
+    transition: all .3s ease-in-out;
+}
+.card h4{
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+.card p{
+    margin: 0;
+    font-size: .9em;
+}
+.cardBar{
+    height: 7.5vw;
+    width: 2px;
+    border-radius: 99px;
+    background-color: #242528;
+}
+.card:hover i{
+    color: #FDD762;
+    transform: scale(1.05);
+}
+.card:hover h4{
+    animation: shake 2s ease 0s 1 normal forwards;
+}
+.title{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 7vh;
+    font-size: 2em;
+}
+
+
+
+

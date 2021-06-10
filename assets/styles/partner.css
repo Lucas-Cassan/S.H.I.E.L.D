@@ -1,0 +1,32 @@
+#containerPartner{
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    background-color: white;
+    top: -1000%;
+}
+.partnerInfo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.partnerInfo .part{
+    width: 60%;
+}
+.text.center{
+    text-align: center;
+}
+.barHorizontal{
+    margin: auto;
+    width: 50vw;
+    height: 2px;
+    border-radius: 99px;
+    background-color: #242528;
+}
+.atout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

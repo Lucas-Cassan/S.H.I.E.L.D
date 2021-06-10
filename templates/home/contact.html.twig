@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact - S.H.I.E.L.D{% endblock %}
+
+{% block body %}
+
+    <div id="containerContact">
+        {{ include('header.html.twig') }}
+        <section class="section flex h-100" id="section1">
+            <article>
+                <h1>Vous êtes intéressé ? Contacter le <span style="color: #FDD762;">S.H.I.E.L.D</span><i style="font-size: .3em; color: #FDD762"> (Advanced)</i></h1>
+            </article>
+            <img src="{{ asset('assets/designContact.svg') }}" alt="Design 3D Contact">
+        </section>
+        <section class="section flex h-100" id="sectionForm">
+            <div id="cordonnees">
+                <h2>Nos coordonnées</h2>
+                <p class="text">
+                    Une question ? Un problème ?
+                    <br>
+                    N'hésitez pas ! Nous vous répondrons dans les plus brefs délais.
+                </p>
+                <nav id="navContact">
+                    <a href="tel:+33648526092"><i class="fas fa-phone"></i> 06 48 52 60 92</a>
+                    <a href="mailto:lucascassan@outlook.com"><i class="fas fa-envelope"></i> shield@support.com</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> 5 rue Helicarrier</a>
+                </nav>
+                <nav id="socialContact">
+                    <a href="tel:+33648526092"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:lucascassan@outlook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </nav>
+            </div>
+            <form action="">
+                <div class="label">
+                    <label for="name">Votre nom</label>
+                    <i class="fas fa-user"></i>
+                    <span class="bar">|</span>
+                    <input id="name" class="input" type="text">
+                </div>
+                <div class="label">
+                    <label for="mail">Votre mail</label>
+                    <i class="fas fa-envelope"></i>
+                    <span class="bar">|</span>
+                    <input id="mail"  class="input" type="mail">
+                </div>
+                <div class="label big">
+                    <label for="msg">Message</label>
+                    <textarea name="msg" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                </div>
+                <button class="btn">Envoyer le message</button>
+            </form>
+        </section>
+        {{ include('footer.html.twig') }}
+    </div>
+
+
+{% endblock %}

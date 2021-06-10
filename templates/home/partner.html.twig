@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Partenaire - S.H.I.E.L.D{% endblock %}
+
+{% block body %}
+
+    <div id="containerPartner">
+        {{ include('header.html.twig') }}
+        <section class="section flex h-100" id="section1">
+            <article>
+                <h1>Notre partenaire de grande renommée <span style="color: #FDD762;">Stark Industries</span></h1>
+            </article>
+            <img src="{{ asset('assets/designPartner.png') }}" alt="Design 3D Contact">
+        </section>
+        <h2 class="title" id="accrochePartner"></h2>
+        <div class="barHorizontal"></div>
+
+        <section class="section flex partnerInfo">
+            <div class="part">
+                <h2 class="title"><span style="color: #FDD762;">Stark Industries</span> c'est quoi ?</h2>
+                <p class="text center">Stark Industries est une firme multinationale qui trouve son origine dans la deuxième moitié du XIXe siècle aux États-Unis, sous la forme d’une affaire familiale d’ingénierie et de manufacture dirigée par Isaac Stark Sr1. Isaac Stark développe de nouvelles technologies électriques et d’ingénierie ayant des applications dans le domaine de la sécurité1. Au cours du XXe siècle, la petite société connaît un large essor et, sous la conduite de Howard Stark (le père de Tony Stark), devient l’une des principales firmes industrielles du monde.</p>
+            </div>
+        </section>
+        <div class="barHorizontal"></div>
+        <section class="section flex partnerInfo">
+            <div class="part">
+                <div class="atout">
+                    <h2 class="title">Les objectifs de <span style="color: #FDD762;">Stark Industries</span></h2>
+                    <div class="card">
+                        <i class="fas fa-wrench"></i>
+                        <h4>L'inovation</h4>
+                    </div>
+                    <div class="cardBar"></div>
+                    <div class="card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>L'évolution</h4>
+                    </div>
+                    <div class="cardBar"></div>
+                    <div class="card">
+                        <i class="fas fa-robot"></i>
+                        <h4>La robotisation</h4>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-leaf"></i>
+                        <h4>L'écologie</h4>
+                    </div>
+                    <div class="cardBar"></div>
+                    <div class="card">
+                        <i class="fas fa-stethoscope"></i>
+                        <h4>La médecine</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{ include('footer.html.twig') }}
+    </div>
+    <script>
+        setTimeout(function() {
+            new TypeIt("#accrochePartner", {
+                strings: "Ce partenariat nous permettra d'accélérer l'accès aux nouvelles technologies.",
+                speed: 50,
+                waitUntilVisible: true
+            }).go();
+        }, 1000)
+    </script>
+
+
+{% endblock %}

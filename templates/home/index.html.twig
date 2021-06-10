@@ -1,0 +1,113 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}S.H.I.E.L.D{% endblock %}
+
+{% block body %}
+
+    <section class="section center h-100" id="home">
+        <svg version="1.1" id="logoHome" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 700 150" style="enable-background:new 0 0 700 150;" xml:space="preserve">
+                <path class="svgColor logoItem S" d="M49.32,117.38c-17.83,0-31.76-8.85-32.35-25.62h21.49c0.59,6.37,4.6,9.44,10.27,9.44c5.9,0,9.68-2.95,9.68-7.79c0-15.35-41.44-7.08-41.2-36.48c0-15.7,12.87-24.44,30.22-24.44c18.06,0,30.22,8.97,31.05,24.79H56.64c-0.35-5.31-4.13-8.5-9.56-8.62c-4.84-0.12-8.5,2.36-8.5,7.56c0,14.4,40.96,7.91,40.96,35.65C79.54,105.81,68.68,117.38,49.32,117.38z"/>
+                <path class="svgColor logoItem 1P" d="M101.38,117.5c-7.2,0-12.04-4.84-12.04-10.86c0-6.26,4.84-11.1,12.04-11.1c7.08,0,11.92,4.84,11.92,11.1C113.3,112.66,108.46,117.5,101.38,117.5z"/>
+                <path class="svgColor logoItem H" d="M176.81,82.44h-31.4v34.12h-20.19V33.68h20.19v32.46h31.4V33.68H197v82.87h-20.19V82.44z"/>
+                <path class="svgColor logoItem 2P" d="M220.96,117.5c-7.2,0-12.04-4.84-12.04-10.86c0-6.26,4.84-11.1,12.04-11.1c7.08,0,11.92,4.84,11.92,11.1C232.88,112.66,228.04,117.5,220.96,117.5z"/>
+                <path class="svgColor logoItem I" d="M244.8,33.68h20.19v82.87H244.8V33.68z"/>
+                <path class="svgColor logoItem 3P" d="M289.07,117.5c-7.2,0-12.04-4.84-12.04-10.86c0-6.26,4.84-11.1,12.04-11.1c7.08,0,11.92,4.84,11.92,11.1C300.99,112.66,296.15,117.5,289.07,117.5z"/>
+                <path class="svgColor logoItem E" d="M363.68,49.86H333.1v16.76h27.03V82.2H333.1v18.18h30.57v16.17h-50.76V33.68h50.76V49.86z"/>
+                <path class="svgColor logoItem 4P" d="M386.22,117.5c-7.2,0-12.04-4.84-12.04-10.86c0-6.26,4.84-11.1,12.04-11.1c7.08,0,11.92,4.84,11.92,11.1C398.14,112.66,393.3,117.5,386.22,117.5z"/>
+                <path class="svgColor logoItem L" d="M430.25,33.68v67.29h26.44v15.58h-46.63V33.68H430.25z"/>
+                <path class="svgColor logoItem 5P" d="M475.82,117.5c-7.2,0-12.04-4.84-12.04-10.86c0-6.26,4.84-11.1,12.04-11.1c7.08,0,11.92,4.84,11.92,11.1C487.74,112.66,482.9,117.5,475.82,117.5z"/>
+                <path class="svgColor logoItem D" d="M574.15,75.12c0,24.55-17,41.44-43.44,41.44h-31.05V33.68h31.05C557.15,33.68,574.15,50.45,574.15,75.12zM529.41,99.08c15.23,0,24.2-8.74,24.2-23.96s-8.97-24.2-24.2-24.2h-9.56v48.16H529.41z"/>
+                <g id="logoShield">
+                    <path class="svgColor logoShield" d="M672.76,48.8c-1.92,0.19-3.94,0.29-6.07,0.29c-0.68,0-1.38-0.01-2.1-0.04c-8.94-0.25-15.39-2.33-19.72-4.47v62.14c5.13-2.04,16.63-7.51,23.69-15.68C673.27,85.61,674.26,66.72,672.76,48.8z"/>
+                    <path class="svgColor logoShield" d="M679,37.7c-0.34,0.12-0.72,0.25-1.15,0.37c-0.25,0.08-0.52,0.14-0.82,0.23c-2.29,0.59-5.66,1.13-10.34,1.13c-0.58,0-1.19-0.01-1.83-0.04c-14.22-0.4-19.99-6.31-19.99-6.31S639.12,39,624.9,39.4c-0.64,0.02-1.25,0.04-1.83,0.04c-4.61,0-7.95-0.52-10.24-1.11c-0.33-0.08-0.64-0.17-0.92-0.25c-0.43-0.12-0.81-0.25-1.15-0.37c-0.23-0.08-0.43-0.16-0.62-0.24c-1.03-0.42-1.48-0.74-1.48-0.74s-6.85,46.68,5.23,60.63c10.83,12.52,29.09,19.18,30.97,19.55c1.89-0.37,20.15-7.03,30.99-19.55c12.07-13.96,5.23-60.63,5.23-60.63s-0.46,0.31-1.48,0.74C679.42,37.54,679.21,37.62,679,37.7z M644.89,111.48c-4.34-1.54-18.54-7.66-27.07-17.53c-6.8-7.85-6.67-32.77-4.8-50.26c2.94,0.62,6.32,0.93,10.05,0.93c0.63,0,1.29-0.01,1.98-0.04c9.81-0.28,16.2-2.93,19.83-5.09c3.64,2.16,10.04,4.81,19.84,5.09c0.69,0.02,1.35,0.04,1.98,0.04c3.73,0,7.1-0.31,10.05-0.93c1.87,17.49,1.99,42.41-4.8,50.26C663.28,103.97,649.27,109.95,644.89,111.48z"/>
+                </g>
+        </svg>
+        <p class="textWhite" id="slogan"></p>
+
+        <svg version="1.1" id="arrowStart" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 50" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+           <g>
+               <path class="arrowStart" d="M98.14,21.1L78.63,1.59c-1.91-1.91-5.04-2.19-7.05-0.38c-2.14,1.92-2.2,5.22-0.19,7.23l8.84,8.84c1,1,0.29,2.7-1.12,2.7H47.23c-2.7,0-5.11,2.02-5.26,4.71c-0.15,2.87,2.13,5.25,4.97,5.25h32.17c1.41,0,2.12,1.71,1.12,2.7l-8.64,8.65c-1.91,1.91-2.19,5.04-0.38,7.05c1.92,2.14,5.22,2.2,7.23,0.2l19.71-19.71C100.28,26.7,100.28,23.24,98.14,21.1z"/>
+               <path class="arrowStart" d="M28.49,19.99h-5.74c-2.75,0-4.98,2.23-4.98,4.98s2.23,4.98,4.98,4.98h5.74c2.75,0,4.98-2.23,4.98-4.98S31.24,19.99,28.49,19.99z"/>
+               <path class="arrowStart" d="M5.77,19.99H5.24c-2.75,0-4.98,2.23-4.98,4.98s2.23,4.98,4.98,4.98h0.54c2.75,0,4.98-2.23,4.98-4.98S8.52,19.99,5.77,19.99z"/>
+           </g>
+        </svg>
+
+        <div id="slide">
+            <svg class="wave-top" width="100" viewBox="0 0 1200 250">
+                <path fill-rule="evenodd" class="slideColor" clip-rule="evenodd" d="M0 108.306L50 114.323C100 120.34 200 132.374 300 168.476C400 204.578 500 264.749 600 246.698C700 228.647 800 132.374 900 108.306C1000 84.2382 1100 132.374 1150 156.442L1200 180.51V-8.5451e-06H1150C1100 -8.5451e-06 1000 -8.5451e-06 900 -8.5451e-06C800 -8.5451e-06 700 -8.5451e-06 600 -8.5451e-06C500 -8.5451e-06 400 -8.5451e-06 300 -8.5451e-06C200 -8.5451e-06 100 -8.5451e-06 50 -8.5451e-06H0V108.306Z"/>
+            </svg>
+            <div id="slideBG"></div>
+        </div>
+    </section>
+
+    <div id="container">
+           {{ include('header.html.twig') }}
+        <section class="section flex h-100" id="section1">
+            <article>
+                <h1>Vous êtes un super héros de la vente ? Alors rejoignez le <span style="color: #FDD762;">S.H.I.E.L.D</span><i style="font-size: .3em; color: #FDD762"> (Advanced)</i></h1>
+                <br>
+                <a href="{{ path('recruitment') }}" class="btn">Rejoins nous</a>
+                <a href="{{ path('presentation') }}" class="btn btnBorder">Le S.H.I.E.L.D ?</a>
+            </article>
+            <img src="{{ asset('assets/designPhone.svg') }}" alt="Design 3D Phone">
+        </section>
+
+        <section class="section flex" id="section2">
+            <h2 class="title">Tout commence ici !</h2>
+            <div class="card">
+                <i class="fas fa-euro-sign"></i>
+                <h4>Salaire attractif</h4>
+                <p>Aucune limite</p>
+            </div>
+            <div class="cardBar"></div>
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h4>Plan de carrière</h4>
+                <p>Visez plus haut</p>
+            </div>
+            <div class="cardBar"></div>
+            <div class="card">
+                <i class="fas fa-trophy"></i>
+                <h4>Challenges</h4>
+                <p>Soyez le meilleur</p>
+            </div>
+            <div class="cardBar"></div>
+            <div class="card">
+                <i class="fas fa-award"></i>
+                <h4>Avantages</h4>
+                <p>Que des bonus</p>
+            </div>
+            <div class="cardBar"></div>
+            <div class="card">
+                <i class="fas fa-wifi"></i>
+                <h4>Digital</h4>
+                <p>Restez connecté</p>
+            </div>
+            <a href="{{ path('recruitment') }}" class="btn">Rejoins nous</a>
+
+        </section>
+        <div class="barHorizontal"></div>
+
+        <section class="section flex" id="section3">
+            <h2 class="title">Quelques chiffres</h2>
+            <div class="card">
+                <i class="fas fa-calendar"></i>
+                <h4>10</h4>
+                <p>Années d'expertise</p>
+            </div><div class="cardBar"></div>
+            <div class="card">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h4>+500</h4>
+                <p>Collaborateurs</p>
+            </div><div class="cardBar"></div>
+            <div class="card">
+                <i class="fas fa-users"></i>
+                <h4>+40 000</h4>
+                <p>Clients</p>
+            </div>
+        </section>
+        {{ include('footer.html.twig') }}
+    </div>
+
+
+{% endblock %}
